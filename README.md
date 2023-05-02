@@ -18,15 +18,19 @@ This scraper is under active development. If you have any feature requests you c
 
 ## Input Parameters
 
-The input of this scraper should be JSON containing the list of pages on Tiktok Video that should be visited. Required fields are:
+The input of this scraper should be JSON containing the list of pages on Tiktok Video that should be visited. Possible fields are:
 
-| Field                | Type    | Description                                                                                                                                                                                                    |
-| -------------------- | ------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| startUrls            | Array   | (Required) List of Tiktok Video URLs. You should only provide the URLs of videos. URLs                                                                                                                 |
-| maxItems             | Integer | (optional) You can limit scraped results.                                                                                                 |
-| proxy                | Object  | Proxy configuration                                                                                                                                                                                            |
-| extendOutputFunction | String  | (optional) Function that takes a JQuery handle ($) as argument and returns object with data                                                                                                                    |
-| customMapFunction | String  | (optional) Function that takes each objects handle as argument and returns object with executing the function                                                                                                                     |
+- `startUrls`: (Optional) (Array) List of Tiktok Video URLs. You should only provide the URLs of videos.
+
+- `includeReviews`: (Optional) (Boolean) This will add all the reviews that XXXXX provides into the detail objects. Please keep in mind that the time and resources the actor uses will increase proportionally by the number of reviews.
+
+- `maxItems`: (Optional) (Number) You can limit scraped items. This should be useful when you search through the big lists or search results.
+
+- `proxy`: (Required) (Proxy Object) Proxy configuration.
+
+- `extendOutputFunction`: (Optional) (String) Function that takes a JQuery handle ($) as argument and returns object with data.
+
+- `customMapFunction`: (Optional) (String) Function that takes each objects handle as argument and returns object with executing the function.
 
 This solution requires the use of **Proxy servers**, either your own proxy servers or you can use [Apify Proxy](https://www.apify.com/docs/proxy).
 
