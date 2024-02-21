@@ -1,4 +1,4 @@
-# [https://apify.com/epctex/tiktok-video-scraper](https://apify.com/epctex/tiktok-video-scraper?fpr=yhdrb)
+[https://apify.com/epctex/tiktok-video-scraper](https://apify.com/epctex/tiktok-video-scraper?fpr=yhdrb)
 
 # Actor - Tiktok Video Scraper
 
